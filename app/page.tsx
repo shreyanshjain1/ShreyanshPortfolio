@@ -11,12 +11,14 @@ import {
   ExternalLink,
   FolderKanban,
   Github,
+  Globe,
   GraduationCap,
   Linkedin,
   Mail,
   MapPin,
   Radar,
   ScrollText,
+  Search,
   Server,
   Shield,
   Sparkles,
@@ -39,26 +41,42 @@ const navItems = [
 
 const featuredProjects = [
   {
-    title: "TrailPulse",
-    type: "Modern SaaS / Consumer Product",
+    title: "CrickInPhSEO",
+    type: "SEO Strategy / Technical SEO / Content-Led Web Build",
     description:
-      "A polished hiking planner with Google OAuth, calendar sync, notifications, background jobs, and security-first API patterns.",
-    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "Tailwind CSS"],
-    github: "https://github.com/shreyanshjain1/TrailPulse"
+      "A search-focused cricket platform tailored for the Philippines, built around keyword targeting, content architecture, on-page SEO, internal linking, metadata tuning, and discoverability improvements.",
+    stack: ["Next.js", "TypeScript", "SEO", "Technical SEO", "Content Strategy", "Structured Metadata"],
+    github: "https://github.com/shreyanshjain1/CrickInPhSEO"
+  },
+  {
+    title: "Vertex-POS",
+    type: "Flagship Retail System / Full-Stack Operations Product",
+    description:
+      "A production-minded POS and inventory platform with analytics, role-based access, inventory controls, operational workflows, reporting, and features that push it beyond a simple student project.",
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "POS Workflows", "Inventory Logic", "Reporting"],
+    github: "https://github.com/shreyanshjain1/Vertex-POS"
   },
   {
     title: "VitaVault",
-    type: "Flagship Health App",
+    type: "Flagship Health-Tech Product",
     description:
-      "A personal health record companion with dashboards for medications, appointments, lab data, vitals, exports, and document handling.",
+      "A personal health record platform with secure records, care workflows, alerts, documents, dashboards, and a roadmap shaped around real-world health-tech product thinking.",
     stack: ["Next.js", "TypeScript", "Auth.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
     github: "https://github.com/shreyanshjain1/VitaVault"
+  },
+  {
+    title: "TrailPulse",
+    type: "Modern SaaS / Consumer Product",
+    description:
+      "A polished hiking planner with Google OAuth, calendar sync, notifications, background jobs, and security-first API patterns that show strong SaaS architecture instincts.",
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "Tailwind CSS"],
+    github: "https://github.com/shreyanshjain1/TrailPulse"
   },
   {
     title: "OfficeHub",
     type: "Internal Operations Platform",
     description:
-      "A secure internal request system for approvals, assignments, attachments, and operational routing built around real office workflows.",
+      "A secure internal request system for approvals, assignments, attachments, and operational routing built around real office workflows and admin control.",
     stack: ["PHP", "MySQL", "JavaScript", "Bootstrap", "RBAC", "Audit Logs"],
     github: "https://github.com/shreyanshjain1/OfficeHub"
   },
@@ -103,14 +121,6 @@ const featuredProjects = [
     github: "https://github.com/shreyanshjain1/Medicine_sales_reports"
   },
   {
-    title: "First E-commerce Website",
-    type: "Foundational Full-Stack Build",
-    description:
-      "An early from-scratch e-commerce system with product management, admin workflows, and customer-facing pages built on PHP and MySQL.",
-    stack: ["PHP", "JavaScript", "MySQL", "Admin Panel"],
-    github: "https://github.com/shreyanshjain1/First-Ecommerce-Website"
-  },
-  {
     title: "Client Quotation Generator",
     type: "Pricing & Operations Tool",
     description:
@@ -125,22 +135,6 @@ const featuredProjects = [
       "A medicine inventory software project built with PHP and MySQL to track stock and support internal pharmacy-style operations.",
     stack: ["PHP", "MySQL", "Inventory"],
     github: "https://github.com/shreyanshjain1/Medicine-Inventory-Software"
-  },
-  {
-    title: "Skin Disease Detection YOLOv5 Project",
-    type: "AI / Computer Vision",
-    description:
-      "A machine learning project using YOLOv5 for skin disease detection based on sample datasets from the Philippines.",
-    stack: ["Python", "YOLOv5", "Jupyter Notebook", "Computer Vision"],
-    github: "https://github.com/shreyanshjain1/Skin-Disease-Detection-Python-YoloV5-Project"
-  },
-  {
-    title: "SenSabong Application Android",
-    type: "Research-Linked Mobile App",
-    description:
-      "The Android application connected to the SenSabong research work, showing your ability to participate in software tied to academic publication.",
-    stack: ["Java", "Android"],
-    github: "https://github.com/shreyanshjain1/SenSabong-Aplication-Android"
   }
 ];
 
@@ -150,10 +144,10 @@ const experience = [
     role: "IT & E-Commerce Business Lead",
     period: "Oct 2024 – Present",
     points: [
-      "Owns the design, deployment, and protection of business-critical systems spanning software, infrastructure, and online retail platforms.",
-      "Builds PHP/MySQL internal tools for task management, inventory, invoicing, permissions, audit logs, and reporting.",
-      "Manages Linux/Windows servers, DNS/SSL, backups, DR routines, patching, and least-privilege security practices.",
-      "Supports secure data workflows, e-commerce growth, and AI-assisted app delivery while keeping architectural and permission control in place."
+      "Owns the design, deployment, and protection of business-critical systems spanning software, infrastructure, digital operations, and online retail platforms.",
+      "Builds PHP/MySQL internal tools for task management, inventory, invoicing, permissions, audit logs, quotations, and reporting.",
+      "Leads website improvements, SEO-oriented pages, marketplace optimization, and digital visibility work tied to actual business growth.",
+      "Manages Linux/Windows servers, DNS/SSL, backups, DR routines, patching, and least-privilege security practices."
     ]
   },
   {
@@ -214,6 +208,20 @@ const skillGroups = [
     ]
   },
   {
+    title: "SEO, Search & Web Growth",
+    icon: Search,
+    items: [
+      "Technical SEO",
+      "On-page optimization",
+      "Content structure",
+      "Metadata optimization",
+      "Internal linking",
+      "Keyword targeting",
+      "Search visibility",
+      "SEO-led landing pages"
+    ]
+  },
+  {
     title: "Infrastructure & Delivery",
     icon: Server,
     items: [
@@ -247,12 +255,12 @@ const skillGroups = [
     items: [
       "Shopify",
       "Shopee / Lazada / TikTok Shop",
-      "SEO",
       "Facebook Ads",
       "Automated reporting",
       "CSV / PDF exports",
       "Vendor coordination",
-      "SOP creation"
+      "SOP creation",
+      "Operational workflow design"
     ]
   }
 ];
@@ -310,6 +318,7 @@ const academicRecognition = [
 const contactLinks = [
   { label: "GitHub", href: "https://github.com/shreyanshjain1", icon: Github },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/shreyansh-jain-6b6813233/", icon: Linkedin },
+  { label: "Portfolio Repo", href: "https://github.com/shreyanshjain1", icon: Globe },
   { label: "Email", href: "mailto:shreyanshmanishjain@gmail.com", icon: Mail }
 ];
 
@@ -362,7 +371,7 @@ function MotionCard({ children, className = "" }: { children: React.ReactNode; c
 }
 
 export default function HomePage() {
-  const [repoCount, setRepoCount] = useState<number>(13);
+  const [repoCount, setRepoCount] = useState<number>(12);
 
   useEffect(() => {
     let isMounted = true;
@@ -398,7 +407,7 @@ export default function HomePage() {
     () => [
       { value: `${repoCount}+`, label: "Public repositories on GitHub" },
       { value: `${featuredProjects.length}`, label: "Projects showcased here" },
-      { value: `${linkedInCredentials.length}`, label: "Verified LinkedIn credential entries" },
+      { value: "SEO + Full Stack", label: "Core positioning shown on this site" },
       { value: "1", label: "ACM-indexed publication" }
     ],
     [repoCount]
@@ -410,13 +419,15 @@ export default function HomePage() {
     "PHP",
     "MySQL",
     "Cybersecurity",
+    "Technical SEO",
     "Infrastructure",
     "Vercel",
     "OAuth",
     "Internal Tools",
     "E-commerce Systems",
     "API Integrations",
-    "Audit Logs"
+    "Audit Logs",
+    "Search Visibility"
   ];
 
   return (
@@ -436,6 +447,7 @@ export default function HomePage() {
             <a
               href="https://github.com/shreyanshjain1"
               target="_blank"
+              rel="noreferrer"
               className="button-secondary !rounded-full !px-4 !py-2 text-sm"
             >
               <Github className="h-4 w-4" />
@@ -444,6 +456,7 @@ export default function HomePage() {
             <a
               href="https://www.linkedin.com/in/shreyansh-jain-6b6813233/"
               target="_blank"
+              rel="noreferrer"
               className="button-secondary !rounded-full !px-4 !py-2 text-sm"
             >
               <Linkedin className="h-4 w-4" />
@@ -466,21 +479,23 @@ export default function HomePage() {
           <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="kicker">
               <Radar className="h-4 w-4" />
-              IT & Systems Lead · Full-Stack Developer · Security-Minded Engineer
+              IT & Systems Lead · Full-Stack Developer · SEO Specialist
             </div>
             <h1 className="mt-6 max-w-5xl text-4xl font-black leading-tight tracking-tight text-white sm:text-6xl xl:text-7xl">
-              Building <span className="gradient-title animate-shine">tech-forward systems</span> for real business operations,
-              secure workflows, and modern product experiences.
+              Building <span className="gradient-title animate-shine">search-aware products</span>, flagship internal systems,
+              and modern web experiences backed by real delivery ownership.
             </h1>
             <p className="lead-text mt-6 max-w-3xl text-lg leading-8 sm:text-xl">
-              I work across internal business platforms, backend engineering, infrastructure, e-commerce operations,
-              security controls, and flagship web apps. My portfolio is built to show depth, ownership, and ship-ready execution.
+              I work across full-stack development, SEO-focused builds, business systems, backend engineering,
+              infrastructure, e-commerce operations, and security-minded implementation. My portfolio is designed to show
+              real output, not filler projects.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3 lg:hidden">
               <a
                 href="https://github.com/shreyanshjain1"
                 target="_blank"
+                rel="noreferrer"
                 className="button-secondary !rounded-full !px-4 !py-2 text-sm"
               >
                 <Github className="h-4 w-4" />
@@ -489,6 +504,7 @@ export default function HomePage() {
               <a
                 href="https://www.linkedin.com/in/shreyansh-jain-6b6813233/"
                 target="_blank"
+                rel="noreferrer"
                 className="button-secondary !rounded-full !px-4 !py-2 text-sm"
               >
                 <Linkedin className="h-4 w-4" />
@@ -501,7 +517,7 @@ export default function HomePage() {
                 View flagship work
                 <ArrowRight className="h-4 w-4" />
               </a>
-              <a href="/resume/Shreyansh-M-Jain-2026.pdf" target="_blank" className="button-secondary">
+              <a href="/resume/Shreyansh-M-Jain-2026.pdf" target="_blank" rel="noreferrer" className="button-secondary">
                 <Download className="h-4 w-4" />
                 Open resume
               </a>
@@ -534,25 +550,25 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="text-sm uppercase tracking-[0.2em] text-slate-400">Positioning</p>
-                <p className="text-lg font-bold text-white">Systems builder with delivery depth</p>
+                <p className="text-lg font-bold text-white">Builder with product, systems, and SEO depth</p>
               </div>
             </div>
             <div className="space-y-4 text-sm leading-7 text-slate-300">
               <p>
-                This site presents more than app screens. It highlights architecture, operations, delivery, security posture,
-                and the kind of real-world constraints that matter inside companies.
+                This site now positions you more clearly around full-stack engineering, search visibility work, business
+                systems, and delivery ownership across real operating environments.
               </p>
               <p>
-                The strongest signal here is range with ownership: from PHP/MySQL business systems to modern TypeScript builds,
-                from hosting and integrations to reporting, automation, and defensive controls.
+                The strongest signal here is range with proof: from CrickInPhSEO for search-focused execution, to Vertex-POS
+                and VitaVault for stronger flagship product depth, to internal tools that reflect day-to-day business engineering.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
+              <span className="tech-tag">Full-Stack Development</span>
+              <span className="tech-tag">SEO Specialist</span>
               <span className="tech-tag">Business Systems</span>
-              <span className="tech-tag">Modern Web Apps</span>
-              <span className="tech-tag">Security-aware Builds</span>
               <span className="tech-tag">Infrastructure</span>
-              <span className="tech-tag">E-commerce Ops</span>
+              <span className="tech-tag">Security-aware Builds</span>
             </div>
           </motion.div>
         </div>
@@ -580,8 +596,8 @@ export default function HomePage() {
       <section id="projects" className="container-shell py-14 sm:py-20">
         <SectionHeader
           eyebrow="Projects"
-          title="A broader GitHub showcase that reflects both flagship work and practical business builds."
-          text="This section now covers more of your public GitHub footprint so visitors can see both your polished standout apps and the systems that prove your day-to-day engineering range."
+          title="Flagship work, search-focused builds, and practical systems that reflect what you actually ship."
+          text="This project lineup has been rebalanced to better highlight your current strongest signals: SEO execution, flagship product work, operational systems, and real business-facing software."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
@@ -595,6 +611,7 @@ export default function HomePage() {
                 <a
                   href={project.github}
                   target="_blank"
+                  rel="noreferrer"
                   className="rounded-xl border border-slate-700 p-2 text-slate-300 transition hover:border-cyan-300 hover:text-white"
                 >
                   <ExternalLink className="h-4 w-4" />
@@ -616,8 +633,8 @@ export default function HomePage() {
       <section id="experience" className="container-shell py-14 sm:py-20">
         <SectionHeader
           eyebrow="Professional experience"
-          title="Work that spans engineering, implementation, operations, and secure system ownership."
-          text="My career path combines backend delivery, internal tooling, infrastructure responsibility, and security-related execution. That combination is what I bring into both company systems and portfolio projects."
+          title="Work spanning engineering, implementation, digital growth, operations, and secure system ownership."
+          text="Your portfolio should not read like pure frontend work. This section now leans harder into delivery, infrastructure, operational responsibility, and the business-side outcomes behind the systems you build."
         />
 
         <div className="mt-10 space-y-6">
@@ -646,11 +663,11 @@ export default function HomePage() {
       <section id="skills" className="container-shell py-14 sm:py-20">
         <SectionHeader
           eyebrow="Skills and operating range"
-          title="A profile built around what I actually do in the field, not just what looks good on a list."
-          text="The strongest part of my skill set is the ability to move across code, servers, workflows, security, integrations, and operations while keeping systems usable and maintainable."
+          title="A stronger mix of engineering depth, SEO execution, infrastructure, and business-system delivery."
+          text="This version sharpens your positioning so visitors can immediately understand that you are not boxed into one lane. You build, deploy, improve visibility, and keep systems running."
         />
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {skillGroups.map((group) => {
             const Icon = group.icon;
             return (
@@ -677,8 +694,8 @@ export default function HomePage() {
       <section id="recognition" className="container-shell py-14 sm:py-20">
         <SectionHeader
           eyebrow="Recognition, credentials, and publication"
-          title="Verified profile signals from education, LinkedIn-visible credentials, and published work."
-          text="This area combines academic recognition, public credential entries, and your ACM publication so the portfolio feels stronger and more complete without relying on filler content."
+          title="Verified profile signals from education, public credentials, and published work."
+          text="This section stays useful because it adds proof points without clutter. It complements your flagship repos instead of trying to carry the whole portfolio by itself."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -727,7 +744,7 @@ export default function HomePage() {
               <p><span className="text-slate-400">DOI:</span> {publication.doi}</p>
               <p><span className="text-slate-400">Authors:</span> {publication.authors.join(", ")}</p>
             </div>
-            <a href={publication.href} target="_blank" className="button-secondary mt-6 inline-flex">
+            <a href={publication.href} target="_blank" rel="noreferrer" className="button-secondary mt-6 inline-flex">
               <ScrollText className="h-4 w-4" />
               View publication
             </a>
@@ -762,8 +779,8 @@ export default function HomePage() {
         <MotionCard className="panel rounded-[32px] p-8 sm:p-10">
           <SectionHeader
             eyebrow="Contact"
-            title="Open to strong engineering, systems, backend, and security-aware opportunities."
-            text="Whether the role is full-stack, internal systems, backend engineering, business technology, or security-focused product development, this portfolio is designed to show how I build and deliver in real operating environments."
+            title="Open to strong engineering, systems, backend, SEO, and security-aware opportunities."
+            text="Whether the role is full-stack, internal systems, backend engineering, SEO-focused web delivery, business technology, or security-minded product development, this portfolio is now positioned to show a broader and stronger range."
           />
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -774,6 +791,7 @@ export default function HomePage() {
                   key={link.label}
                   href={link.href}
                   target="_blank"
+                  rel="noreferrer"
                   className="button-secondary"
                 >
                   <Icon className="h-4 w-4" />
