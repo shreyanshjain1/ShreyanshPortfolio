@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     title: "Shreyansh Jain | Portfolio v2",
     description:
       "A modern developer portfolio focused on full-stack product work, internal systems, infrastructure, and security-aware implementation.",
-    url: "https://your-vercel-domain.vercel.app",
+    url: "https://shreyansh-portfolio-kappa.vercel.app/",
     siteName: "Shreyansh Jain Portfolio",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shreyansh Jain | Portfolio v2",
+    title: "Shreyansh Jain | Portfolio",
     description:
       "Full-stack developer, IT & Systems Lead, and security-minded builder working across modern apps and real business systems."
   }
