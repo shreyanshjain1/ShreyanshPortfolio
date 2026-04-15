@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   Download,
   ExternalLink,
+  Eye,
   FolderKanban,
   Github,
   Globe,
@@ -40,17 +41,21 @@ const navItems = [
   { label: "Contact", href: "#contact" }
 ];
 
+const flagshipProject = {
+  title: "Vertex-POS",
+  subtitle: "Flagship Retail Operations Platform",
+  description:
+    "A production-minded retail system that goes far beyond checkout. It covers sales, inventory, purchasing, stock counts, cash sessions, receivables, supplier workflows, reporting, permissions, and multi-branch operations.",
+  highlights: [
+    "Deep workflow coverage across checkout, inventory, purchasing, cash handling, and reporting",
+    "Strong backend and domain modeling using Prisma and PostgreSQL",
+    "Role-aware actions, audit-friendly operations, and business-oriented reporting depth"
+  ],
+  stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Retail Workflows", "Reporting", "RBAC"],
+  github: "https://github.com/shreyanshjain1/Vertex-POS"
+};
+
 const featuredProjects = [
-  {
-    title: "Vertex-POS",
-    type: "Flagship Retail System",
-    description:
-      "A production-minded retail operations platform covering checkout, stock control, purchasing, receivables, reporting, staff permissions, cash sessions, and multi-branch workflows.",
-    impact:
-      "Shows serious backend depth, operational modeling, and product-thinking well beyond a basic student POS.",
-    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Retail Workflows", "Reporting", "RBAC"],
-    github: "https://github.com/shreyanshjain1/Vertex-POS"
-  },
   {
     title: "VitaVault",
     type: "Health-Tech Product",
@@ -100,17 +105,20 @@ const featuredProjects = [
       "Shows business workflow depth, reporting structure, and delivery for a real internal use case.",
     stack: ["PHP", "MySQL", "Reporting", "Approvals", "Dashboards"],
     github: "https://github.com/shreyanshjain1/Medicine_sales_reports"
+  },
+  {
+    title: "OCR-Scanner-Cheques",
+    type: "Automation & Back-Office Processing",
+    description:
+      "Cheque scanning and OCR review system with secure uploads, admin workflows, auditability, and export-oriented processing.",
+    impact:
+      "Adds stronger evidence of workflow software, document handling, admin flows, and internal processing systems.",
+    stack: ["PHP", "MySQL", "AJAX", "OCR", "Audit Trails"],
+    github: "https://github.com/shreyanshjain1/OCR-Scanner-Cheques"
   }
 ];
 
 const supportingProjects = [
-  {
-    title: "OCR-Scanner-Cheques",
-    description:
-      "Cheque scanning and OCR review system with secure uploads, admin workflows, auditability, and export-oriented processing.",
-    stack: ["PHP", "MySQL", "AJAX", "OCR", "Audit Trails"],
-    github: "https://github.com/shreyanshjain1/OCR-Scanner-Cheques"
-  },
   {
     title: "Employee Task Management Software",
     description:
@@ -436,7 +444,7 @@ export default function HomePage() {
   const stats = useMemo(
     () => [
       { value: `${repoCount}+`, label: "Public repositories on GitHub" },
-      { value: `${featuredProjects.length}`, label: "High-signal projects featured" },
+      { value: "1", label: "Flagship retail operations platform" },
       { value: "Full-Stack + SEO", label: "Primary positioning" },
       { value: "1", label: "ACM-indexed publication" }
     ],
@@ -517,14 +525,14 @@ export default function HomePage() {
             </div>
 
             <h1 className="mt-6 max-w-5xl text-4xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl xl:text-7xl">
-              I build <span className="gradient-title animate-shine">real business systems</span>, search-aware web
-              experiences, and flagship software with delivery depth behind the UI.
+              I build <span className="gradient-title animate-shine">real business systems</span>, flagship software,
+              and search-aware web experiences.
             </h1>
 
             <p className="lead-text mt-6 max-w-3xl text-lg leading-8 sm:text-xl">
               My work spans full-stack development, business software, infrastructure, SEO-focused delivery,
-              security-aware implementation, and real-world system ownership. This portfolio is curated to highlight
-              signal, not filler.
+              security-aware implementation, and real-world system ownership. This portfolio is curated to show signal,
+              not filler.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -655,10 +663,79 @@ export default function HomePage() {
 
       <section id="projects" className="container-shell py-14 sm:py-20">
         <SectionHeader
-          eyebrow="Featured work"
-          title="High-signal projects that best represent how I build."
-          text="These are the projects I would want a hiring manager, founder, or technical reviewer to inspect first. They were chosen for depth, delivery quality, and real-world relevance."
+          eyebrow="Flagship work"
+          title="The strongest signal in this portfolio starts with a real product."
+          text="Instead of presenting every project with equal weight, this section now leads with the platform that best represents my depth in architecture, workflows, business logic, and serious full-stack execution."
         />
+
+        <MotionCard className="mt-10 panel-soft rounded-[32px] p-6 sm:p-8">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+            <div>
+              <div className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
+                Featured flagship
+              </div>
+              <h3 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
+                {flagshipProject.title}
+              </h3>
+              <p className="mt-2 text-sm font-medium uppercase tracking-[0.2em] text-slate-400">
+                {flagshipProject.subtitle}
+              </p>
+              <p className="mt-5 text-sm leading-8 text-slate-300 sm:text-base">
+                {flagshipProject.description}
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {flagshipProject.stack.map((item) => (
+                  <span key={item} className="tech-tag">
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href={flagshipProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button-primary"
+                >
+                  <Github className="h-4 w-4" />
+                  Open repo
+                </a>
+                <a href="#contact" className="button-secondary">
+                  <Mail className="h-4 w-4" />
+                  Ask me about this build
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-4">
+              {flagshipProject.highlights.map((item) => (
+                <div key={item} className="rounded-2xl border border-slate-800 bg-slate-950/45 p-5">
+                  <div className="flex gap-3">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-cyan-300" />
+                    <p className="text-sm leading-7 text-slate-300">{item}</p>
+                  </div>
+                </div>
+              ))}
+              <div className="rounded-2xl border border-cyan-400/15 bg-cyan-400/5 p-5">
+                <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Why it leads</p>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  This project best reflects how I think about systems: workflow depth, operational realism, role-aware
+                  behavior, reporting, data modeling, and serious full-stack implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </MotionCard>
+
+        <div className="mt-14">
+          <SectionHeader
+            eyebrow="More featured projects"
+            title="Supporting flagship work with product, SaaS, SEO, and internal systems depth."
+            text="These projects reinforce the breadth of the portfolio while still keeping the overall signal clean and intentional."
+          />
+        </div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {featuredProjects.map((project) => (
@@ -706,7 +783,7 @@ export default function HomePage() {
             implementation.
           </p>
 
-          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+          <div className="mt-6 grid gap-4 lg:grid-cols-3">
             {supportingProjects.map((project) => (
               <MotionCard key={project.title} className="panel rounded-[24px] p-5">
                 <div className="flex items-start justify-between gap-4">
@@ -907,6 +984,44 @@ export default function HomePage() {
             title="Open to full-stack, backend, systems, SEO-focused, and security-aware opportunities."
             text="I am especially suited for roles where engineering, operations, product thinking, and implementation ownership overlap."
           />
+
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/45 p-5">
+              <div className="flex items-start gap-3">
+                <Briefcase className="mt-0.5 h-5 w-5 shrink-0 text-cyan-300" />
+                <div>
+                  <h3 className="font-semibold text-white">Strongest fit</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-400">
+                    Full-stack, backend, internal systems, SEO-focused web delivery, and technical product roles.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/45 p-5">
+              <div className="flex items-start gap-3">
+                <Eye className="mt-0.5 h-5 w-5 shrink-0 text-cyan-300" />
+                <div>
+                  <h3 className="font-semibold text-white">What I want reviewed</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-400">
+                    Start with Vertex-POS, then VitaVault, TrailPulse, and CrickInPhSEO for the clearest picture.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/45 p-5">
+              <div className="flex items-start gap-3">
+                <Mail className="mt-0.5 h-5 w-5 shrink-0 text-cyan-300" />
+                <div>
+                  <h3 className="font-semibold text-white">Direct contact</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-400">
+                    Available for interviews, technical discussions, and roles that need both engineering and delivery ownership.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-8 flex flex-wrap gap-4">
             {contactLinks.map((link) => {
