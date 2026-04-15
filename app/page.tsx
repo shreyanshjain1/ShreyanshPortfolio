@@ -512,7 +512,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section id="home" className="container-shell pt-16 pb-14 sm:pt-24 sm:pb-20">
+      <section id="home" className="container-shell pt-16 pb-8 sm:pt-24 sm:pb-10">
         <div className="grid items-start gap-10 lg:grid-cols-[1.18fr_0.82fr]">
           <motion.div
             initial={{ opacity: 0, y: 26 }}
@@ -661,14 +661,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="projects" className="container-shell py-14 sm:py-20">
+      <section id="projects" className="container-shell pt-6 pb-14 sm:pt-8 sm:pb-20">
         <SectionHeader
           eyebrow="Flagship work"
           title="The strongest signal in this portfolio starts with a real product."
           text="Instead of presenting every project with equal weight, this section now leads with the platform that best represents my depth in architecture, workflows, business logic, and serious full-stack execution."
         />
 
-        <MotionCard className="mt-10 panel-soft rounded-[32px] p-6 sm:p-8">
+        <MotionCard className="mt-6 panel-soft rounded-[32px] p-6 sm:p-8">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
               <div className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
