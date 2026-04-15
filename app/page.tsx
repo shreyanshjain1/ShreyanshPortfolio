@@ -665,7 +665,7 @@ export default function HomePage() {
         <SectionHeader
           eyebrow="Flagship work"
           title="The strongest signal in this portfolio starts with a real product."
-          text="Instead of presenting every project with equal weight, this section now leads with the platform that best represents my depth in architecture, workflows, business logic, and serious full-stack execution."
+          text="Vertex-POS is the strongest example of my full-stack product thinking, backend depth, workflow design, and business-oriented system building."
         />
 
         <MotionCard className="mt-6 panel-soft rounded-[32px] p-6 sm:p-8">
@@ -721,8 +721,7 @@ export default function HomePage() {
               <div className="rounded-2xl border border-cyan-400/15 bg-cyan-400/5 p-5">
                 <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Why it leads</p>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
-                  This project best reflects how I think about systems: workflow depth, operational realism, role-aware
-                  behavior, reporting, data modeling, and serious full-stack implementation.
+                  This project brings together workflow depth, operational logic, reporting, permissions, and full-stack implementation in one system.
                 </p>
               </div>
             </div>
@@ -733,7 +732,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="More featured projects"
             title="Supporting flagship work with product, SaaS, SEO, and internal systems depth."
-            text="These projects reinforce the breadth of the portfolio while still keeping the overall signal clean and intentional."
+            text="These projects show additional depth across health-tech, SaaS, SEO, internal systems, and workflow-driven software."
           />
         </div>
 
@@ -1004,7 +1003,7 @@ export default function HomePage() {
                 <div>
                   <h3 className="font-semibold text-white">What I want reviewed</h3>
                   <p className="mt-2 text-sm leading-7 text-slate-400">
-                    Start with Vertex-POS, then VitaVault, TrailPulse, and CrickInPhSEO for the clearest picture.
+                   Vertex-POS, VitaVault, TrailPulse, and CrickInPhSEO are the best starting points for understanding my work.
                   </p>
                 </div>
               </div>
