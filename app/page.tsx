@@ -12,7 +12,7 @@ import {
   ExternalLink,
   FolderKanban,
   Github,
- Globe,
+  Globe,
   GraduationCap,
   Linkedin,
   Mail,
@@ -106,25 +106,29 @@ const featuredProjects = [
 const supportingProjects = [
   {
     title: "OCR-Scanner-Cheques",
-    description: "Cheque scanning and OCR review system with secure uploads, admin workflows, auditability, and export-oriented processing.",
+    description:
+      "Cheque scanning and OCR review system with secure uploads, admin workflows, auditability, and export-oriented processing.",
     stack: ["PHP", "MySQL", "AJAX", "OCR", "Audit Trails"],
     github: "https://github.com/shreyanshjain1/OCR-Scanner-Cheques"
   },
   {
     title: "Employee Task Management Software",
-    description: "Role-aware task and update system supporting employee operations, file handling, tracking, and structured management workflows.",
+    description:
+      "Role-aware task and update system supporting employee operations, file handling, tracking, and structured management workflows.",
     stack: ["PHP", "MySQL", "Workflow Logic", "Reporting"],
     github: "https://github.com/shreyanshjain1/Employee-Task-Management-Software"
   },
   {
     title: "DiagEcommerceRep",
-    description: "In-house diagnostic e-commerce platform built around catalog presentation, product structure, and real business operations.",
+    description:
+      "In-house diagnostic e-commerce platform built around catalog presentation, product structure, and real business operations.",
     stack: ["PHP", "E-commerce", "Catalog Management"],
     github: "https://github.com/shreyanshjain1/DiagEcommerceRep"
   },
   {
     title: "Client Quotation Generator",
-    description: "Quotation and pricing tool for business-ready cost breakdowns, tax handling, and calculation support.",
+    description:
+      "Quotation and pricing tool for business-ready cost breakdowns, tax handling, and calculation support.",
     stack: ["PHP", "Pricing Logic", "Business Tools"],
     github: "https://github.com/shreyanshjain1/Client-Quotation-Generator"
   }
@@ -376,7 +380,13 @@ function SectionHeader({
   );
 }
 
-function MotionCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+function MotionCard({
+  children,
+  className = ""
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
     <motion.div
       variants={fadeUp}
@@ -495,21 +505,26 @@ export default function HomePage() {
       </header>
 
       <section id="home" className="container-shell pt-16 pb-14 sm:pt-24 sm:pb-20">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.18fr_0.82fr]">
-          <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+        <div className="grid items-start gap-10 lg:grid-cols-[1.18fr_0.82fr]">
+          <motion.div
+            initial={{ opacity: 0, y: 26 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
             <div className="kicker">
               <Radar className="h-4 w-4" />
               IT & Systems Lead · Full-Stack Developer · SEO Specialist
             </div>
 
-            <h1 className="mt-6 max-w-5xl text-4xl font-black leading-tight tracking-tight text-white sm:text-6xl xl:text-7xl">
+            <h1 className="mt-6 max-w-5xl text-4xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl xl:text-7xl">
               I build <span className="gradient-title animate-shine">real business systems</span>, search-aware web
               experiences, and flagship software with delivery depth behind the UI.
             </h1>
 
             <p className="lead-text mt-6 max-w-3xl text-lg leading-8 sm:text-xl">
-              My work spans full-stack development, business software, infrastructure, SEO-focused delivery, security-aware
-              implementation, and real-world system ownership. This portfolio is curated to highlight signal, not filler.
+              My work spans full-stack development, business software, infrastructure, SEO-focused delivery,
+              security-aware implementation, and real-world system ownership. This portfolio is curated to highlight
+              signal, not filler.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -517,7 +532,12 @@ export default function HomePage() {
                 View flagship work
                 <ArrowRight className="h-4 w-4" />
               </a>
-              <a href="/resume/Shreyansh-M-Jain-2026.pdf" target="_blank" rel="noreferrer" className="button-secondary">
+              <a
+                href="/resume/Shreyansh-M-Jain-2026.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="button-secondary"
+              >
                 <Download className="h-4 w-4" />
                 Open resume
               </a>
@@ -528,7 +548,10 @@ export default function HomePage() {
                 <MapPin className="h-4 w-4" />
                 Metro Manila, Philippines
               </span>
-              <a href="mailto:shreyanshmanishjain@gmail.com" className="inline-flex items-center gap-2 hover:text-cyan-300">
+              <a
+                href="mailto:shreyanshmanishjain@gmail.com"
+                className="inline-flex items-center gap-2 hover:text-cyan-300"
+              >
                 <Mail className="h-4 w-4" />
                 shreyanshmanishjain@gmail.com
               </a>
@@ -553,10 +576,12 @@ export default function HomePage() {
             initial={{ opacity: 0, scale: 0.96, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.12 }}
-            className="panel-soft relative rounded-[30px] p-6 sm:p-8"
+            className="panel-soft rounded-[30px] p-6 sm:p-8 lg:mt-20"
           >
-            <div className="absolute -top-3 right-6 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
-              Why this portfolio works
+            <div className="mb-5">
+              <span className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
+                Why this portfolio works
+              </span>
             </div>
 
             <div className="mb-6 flex items-center gap-3">
@@ -575,8 +600,8 @@ export default function HomePage() {
                 business outcomes.
               </p>
               <p>
-                The portfolio is intentionally weighted toward projects that prove architecture, workflow depth, reporting,
-                security thinking, and production-minded delivery instead of generic toy builds.
+                The portfolio is intentionally weighted toward projects that prove architecture, workflow depth,
+                reporting, security thinking, and production-minded delivery instead of generic toy builds.
               </p>
             </div>
 
@@ -596,11 +621,12 @@ export default function HomePage() {
                   Developer, Technical Product Builder
                 </p>
               </div>
+
               <div className="rounded-2xl border border-slate-800 bg-slate-950/45 p-4">
                 <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Core proof</p>
                 <p className="mt-2 text-sm leading-7 text-slate-300">
-                  Vertex-POS, VitaVault, TrailPulse, CrickInPhSEO, and internal business systems together show both range
-                  and depth.
+                  Vertex-POS, VitaVault, TrailPulse, CrickInPhSEO, and internal business systems together show both
+                  range and depth.
                 </p>
               </div>
             </div>
@@ -676,7 +702,8 @@ export default function HomePage() {
         <div className="mt-12">
           <h3 className="text-xl font-bold text-white">Supporting projects</h3>
           <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-400">
-            Additional work that reinforces business tooling, workflow software, reporting, and operational implementation.
+            Additional work that reinforces business tooling, workflow software, reporting, and operational
+            implementation.
           </p>
 
           <div className="mt-6 grid gap-4 lg:grid-cols-2">
