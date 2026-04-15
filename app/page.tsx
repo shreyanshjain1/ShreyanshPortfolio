@@ -7,11 +7,12 @@ import {
   Award,
   BookOpen,
   Briefcase,
+  CheckCircle2,
   Download,
   ExternalLink,
   FolderKanban,
   Github,
-  Globe,
+ Globe,
   GraduationCap,
   Linkedin,
   Mail,
@@ -41,100 +42,91 @@ const navItems = [
 
 const featuredProjects = [
   {
-    title: "CrickInPhSEO",
-    type: "SEO Strategy / Technical SEO / Content-Led Web Build",
-    description:
-      "A search-focused cricket platform tailored for the Philippines, built around keyword targeting, content architecture, on-page SEO, internal linking, metadata tuning, and discoverability improvements.",
-    stack: ["Next.js", "TypeScript", "SEO", "Technical SEO", "Content Strategy", "Structured Metadata"],
-    github: "https://github.com/shreyanshjain1/CrickInPhSEO"
-  },
-  {
     title: "Vertex-POS",
-    type: "Flagship Retail System / Full-Stack Operations Product",
+    type: "Flagship Retail System",
     description:
-      "A production-minded POS and inventory platform with analytics, role-based access, inventory controls, operational workflows, reporting, and features that push it beyond a simple student project.",
-    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "POS Workflows", "Inventory Logic", "Reporting"],
+      "A production-minded retail operations platform covering checkout, stock control, purchasing, receivables, reporting, staff permissions, cash sessions, and multi-branch workflows.",
+    impact:
+      "Shows serious backend depth, operational modeling, and product-thinking well beyond a basic student POS.",
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Retail Workflows", "Reporting", "RBAC"],
     github: "https://github.com/shreyanshjain1/Vertex-POS"
   },
   {
     title: "VitaVault",
-    type: "Flagship Health-Tech Product",
+    type: "Health-Tech Product",
     description:
-      "A personal health record platform with secure records, care workflows, alerts, documents, dashboards, and a roadmap shaped around real-world health-tech product thinking.",
+      "A personal health record platform designed around secure records, care workflows, alerts, documents, dashboards, and future-ready health product architecture.",
+    impact:
+      "Demonstrates product strategy, secure data handling, domain thinking, and roadmap discipline.",
     stack: ["Next.js", "TypeScript", "Auth.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
     github: "https://github.com/shreyanshjain1/VitaVault"
   },
   {
     title: "TrailPulse",
-    type: "Modern SaaS / Consumer Product",
+    type: "Modern SaaS Product",
     description:
-      "A polished hiking planner with Google OAuth, calendar sync, notifications, background jobs, and security-first API patterns that show strong SaaS architecture instincts.",
-    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "Tailwind CSS"],
+      "A polished hike-planning platform with Google OAuth, calendar sync, notifications, background jobs, and security-first full-stack architecture.",
+    impact:
+      "Shows SaaS instincts, async workflows, integration work, and cleaner consumer-facing product execution.",
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "Google APIs"],
     github: "https://github.com/shreyanshjain1/TrailPulse"
+  },
+  {
+    title: "CrickInPhSEO",
+    type: "Search-Focused Web Build",
+    description:
+      "A cricket platform tailored for the Philippines, built around keyword targeting, page structure, content architecture, metadata tuning, internal linking, and discoverability.",
+    impact:
+      "Proves that I can build for traffic, intent, and business visibility rather than just aesthetics.",
+    stack: ["Next.js", "TypeScript", "Technical SEO", "Content Strategy", "Metadata", "Search Visibility"],
+    github: "https://github.com/shreyanshjain1/CrickInPhSEO"
   },
   {
     title: "OfficeHub",
     type: "Internal Operations Platform",
     description:
-      "A secure internal request system for approvals, assignments, attachments, and operational routing built around real office workflows and admin control.",
+      "A request and workflow system for approvals, assignments, attachments, and operational routing built around real office processes and admin control.",
+    impact:
+      "Demonstrates practical business software thinking, access control, and internal systems ownership.",
     stack: ["PHP", "MySQL", "JavaScript", "Bootstrap", "RBAC", "Audit Logs"],
     github: "https://github.com/shreyanshjain1/OfficeHub"
-  },
-  {
-    title: "BaitBuster",
-    type: "Security Tooling",
-    description:
-      "A phishing-defense-focused desktop security tool using policy logic, DNS filtering, suspicious link scoring, and reporting workflows.",
-    stack: ["Python", "Security Controls", "DNS Filtering", "Reporting"],
-    github: "https://github.com/shreyanshjain1/BaitBuster"
-  },
-  {
-    title: "OCR-Scanner-Cheques",
-    type: "Automation & Back-Office Processing",
-    description:
-      "A modernized cheque scanning and OCR review system with secure uploads, admin workflows, auditability, and export-oriented processing.",
-    stack: ["PHP", "MySQL", "AJAX", "OCR", "Audit Trails"],
-    github: "https://github.com/shreyanshjain1/OCR-Scanner-Cheques"
-  },
-  {
-    title: "Employee Task Management Software",
-    type: "Workflow Management",
-    description:
-      "A role-aware task and reporting platform supporting employee operations, management workflows, file handling, and structured updates.",
-    stack: ["PHP", "MySQL", "Workflow Logic", "Reporting", "Role-based Views"],
-    github: "https://github.com/shreyanshjain1/Employee-Task-Management-Software"
-  },
-  {
-    title: "DiagEcommerceRep",
-    type: "E-commerce Platform",
-    description:
-      "An in-house diagnostic e-commerce platform built for actual business operations, catalog handling, and product presentation.",
-    stack: ["PHP", "E-commerce", "Catalog Management"],
-    github: "https://github.com/shreyanshjain1/DiagEcommerceRep"
   },
   {
     title: "Medicine Sales Reports",
     type: "Business Reporting System",
     description:
-      "A web-based reporting system with separate user and manager views for submission, analysis, and report visibility.",
-    stack: ["PHP", "HTML", "Reporting", "Manager Dashboard"],
+      "A reporting platform built for employee submissions, manager review, visibility, exports, and analytics in a role-aware operational workflow.",
+    impact:
+      "Shows business workflow depth, reporting structure, and delivery for a real internal use case.",
+    stack: ["PHP", "MySQL", "Reporting", "Approvals", "Dashboards"],
     github: "https://github.com/shreyanshjain1/Medicine_sales_reports"
+  }
+];
+
+const supportingProjects = [
+  {
+    title: "OCR-Scanner-Cheques",
+    description: "Cheque scanning and OCR review system with secure uploads, admin workflows, auditability, and export-oriented processing.",
+    stack: ["PHP", "MySQL", "AJAX", "OCR", "Audit Trails"],
+    github: "https://github.com/shreyanshjain1/OCR-Scanner-Cheques"
+  },
+  {
+    title: "Employee Task Management Software",
+    description: "Role-aware task and update system supporting employee operations, file handling, tracking, and structured management workflows.",
+    stack: ["PHP", "MySQL", "Workflow Logic", "Reporting"],
+    github: "https://github.com/shreyanshjain1/Employee-Task-Management-Software"
+  },
+  {
+    title: "DiagEcommerceRep",
+    description: "In-house diagnostic e-commerce platform built around catalog presentation, product structure, and real business operations.",
+    stack: ["PHP", "E-commerce", "Catalog Management"],
+    github: "https://github.com/shreyanshjain1/DiagEcommerceRep"
   },
   {
     title: "Client Quotation Generator",
-    type: "Pricing & Operations Tool",
-    description:
-      "A quotation calculator built to compute pricing, tax, and cost breakdowns using practical business inputs.",
-    stack: ["PHP", "HTML", "Pricing Logic"],
+    description: "Quotation and pricing tool for business-ready cost breakdowns, tax handling, and calculation support.",
+    stack: ["PHP", "Pricing Logic", "Business Tools"],
     github: "https://github.com/shreyanshjain1/Client-Quotation-Generator"
-  },
-  {
-    title: "Medicine Inventory Software",
-    type: "Inventory Management",
-    description:
-      "A medicine inventory software project built with PHP and MySQL to track stock and support internal pharmacy-style operations.",
-    stack: ["PHP", "MySQL", "Inventory"],
-    github: "https://github.com/shreyanshjain1/Medicine-Inventory-Software"
   }
 ];
 
@@ -144,10 +136,10 @@ const experience = [
     role: "IT & E-Commerce Business Lead",
     period: "Oct 2024 – Present",
     points: [
-      "Owns the design, deployment, and protection of business-critical systems spanning software, infrastructure, digital operations, and online retail platforms.",
-      "Builds PHP/MySQL internal tools for task management, inventory, invoicing, permissions, audit logs, quotations, and reporting.",
-      "Leads website improvements, SEO-oriented pages, marketplace optimization, and digital visibility work tied to actual business growth.",
-      "Manages Linux/Windows servers, DNS/SSL, backups, DR routines, patching, and least-privilege security practices."
+      "Own the design, deployment, maintenance, and protection of business-critical systems spanning software, infrastructure, digital operations, and online retail platforms.",
+      "Build internal PHP/MySQL tools for inventory, quotations, permissions, audit logs, reporting, task workflows, and operational visibility.",
+      "Lead website improvements, SEO-oriented pages, marketplace optimization, and digital visibility work tied to actual business growth.",
+      "Manage Linux/Windows servers, DNS/SSL, backups, DR routines, patching, and least-privilege security practices."
     ]
   },
   {
@@ -202,8 +194,8 @@ const skillGroups = [
       "PostgreSQL",
       "Prisma",
       "HTML/CSS/JavaScript",
-      "OAuth integrations",
       "REST APIs",
+      "OAuth integrations",
       "Git"
     ]
   },
@@ -213,7 +205,7 @@ const skillGroups = [
     items: [
       "Technical SEO",
       "On-page optimization",
-      "Content structure",
+      "Content architecture",
       "Metadata optimization",
       "Internal linking",
       "Keyword targeting",
@@ -225,12 +217,12 @@ const skillGroups = [
     title: "Infrastructure & Delivery",
     icon: Server,
     items: [
-      "Linux/Windows Server",
+      "Linux / Windows Server",
       "cPanel / XAMPP",
       "IIS / Apache",
       "DNS / SSL",
       "Hosting setup",
-      "Backup and disaster recovery",
+      "Backup & disaster recovery",
       "SFTP / API ingestion",
       "Troubleshooting"
     ]
@@ -244,9 +236,9 @@ const skillGroups = [
       "Encryption at rest and in transit",
       "Endpoint security",
       "Vulnerability scanning",
-      "Data de-identification",
       "Risk mitigation",
-      "Least-privilege controls"
+      "Least-privilege controls",
+      "Secure system design"
     ]
   },
   {
@@ -261,6 +253,20 @@ const skillGroups = [
       "Vendor coordination",
       "SOP creation",
       "Operational workflow design"
+    ]
+  },
+  {
+    title: "Delivery Signal",
+    icon: FolderKanban,
+    items: [
+      "Flagship product thinking",
+      "Business-facing software",
+      "Workflow modeling",
+      "Reporting systems",
+      "Integration ownership",
+      "Deployment responsibility",
+      "Operational problem-solving",
+      "Real-world implementation"
     ]
   }
 ];
@@ -318,8 +324,23 @@ const academicRecognition = [
 const contactLinks = [
   { label: "GitHub", href: "https://github.com/shreyanshjain1", icon: Github },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/shreyansh-jain-6b6813233/", icon: Linkedin },
-  { label: "Portfolio Repo", href: "https://github.com/shreyanshjain1", icon: Globe },
+  { label: "Portfolio Repo", href: "https://github.com/shreyanshjain1/ShreyanshPortfolio", icon: Globe },
   { label: "Email", href: "mailto:shreyanshmanishjain@gmail.com", icon: Mail }
+];
+
+const valuePillars = [
+  {
+    title: "Business systems, not toy apps",
+    text: "I build software around real workflows, approvals, reporting, permissions, and operational ownership."
+  },
+  {
+    title: "Search-aware delivery",
+    text: "I can design and improve websites for discoverability, buyer intent, and search-driven business impact."
+  },
+  {
+    title: "Product + infrastructure range",
+    text: "From app logic and APIs to hosting, SSL, backups, and deployment discipline, I work across the stack."
+  }
 ];
 
 const fadeUp = {
@@ -381,8 +402,7 @@ export default function HomePage() {
         const response = await fetch("https://api.github.com/users/shreyanshjain1", {
           headers: {
             Accept: "application/vnd.github+json"
-          },
-          next: { revalidate: 3600 }
+          }
         });
 
         if (!response.ok) return;
@@ -392,7 +412,7 @@ export default function HomePage() {
           setRepoCount(data.public_repos);
         }
       } catch {
-        // Keep fallback count.
+        //
       }
     }
 
@@ -406,8 +426,8 @@ export default function HomePage() {
   const stats = useMemo(
     () => [
       { value: `${repoCount}+`, label: "Public repositories on GitHub" },
-      { value: `${featuredProjects.length}`, label: "Projects showcased here" },
-      { value: "SEO + Full Stack", label: "Core positioning shown on this site" },
+      { value: `${featuredProjects.length}`, label: "High-signal projects featured" },
+      { value: "Full-Stack + SEO", label: "Primary positioning" },
       { value: "1", label: "ACM-indexed publication" }
     ],
     [repoCount]
@@ -418,16 +438,16 @@ export default function HomePage() {
     "TypeScript",
     "PHP",
     "MySQL",
-    "Cybersecurity",
+    "PostgreSQL",
+    "Prisma",
     "Technical SEO",
+    "Cybersecurity",
     "Infrastructure",
-    "Vercel",
-    "OAuth",
-    "Internal Tools",
-    "E-commerce Systems",
-    "API Integrations",
+    "RBAC",
     "Audit Logs",
-    "Search Visibility"
+    "API Integrations",
+    "E-commerce Systems",
+    "Operational Software"
   ];
 
   return (
@@ -437,11 +457,19 @@ export default function HomePage() {
       <div className="grid-overlay absolute inset-0 -z-10 opacity-30" />
       <div className="noise-overlay absolute inset-0 -z-10" />
 
-      <header className="sticky top-0 z-50 border-b border-white/5 bg-slate-950/65 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-white/5 bg-slate-950/70 backdrop-blur-xl">
         <div className="container-shell flex flex-wrap items-center justify-between gap-4 py-4">
           <a href="#home" className="text-sm font-bold uppercase tracking-[0.28em] text-slate-100">
             SJ / Portfolio
           </a>
+
+          <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+            {navItems.map((item) => (
+              <a key={item.label} href={item.href} className="transition hover:text-cyan-300">
+                {item.label}
+              </a>
+            ))}
+          </nav>
 
           <div className="hidden items-center gap-3 lg:flex">
             <a
@@ -463,14 +491,6 @@ export default function HomePage() {
               LinkedIn
             </a>
           </div>
-
-          <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href} className="transition hover:text-cyan-300">
-                {item.label}
-              </a>
-            ))}
-          </nav>
         </div>
       </header>
 
@@ -481,36 +501,16 @@ export default function HomePage() {
               <Radar className="h-4 w-4" />
               IT & Systems Lead · Full-Stack Developer · SEO Specialist
             </div>
-            <h1 className="mt-6 max-w-5xl text-4xl font-black leading-tight tracking-tight text-white sm:text-6xl xl:text-7xl">
-              Building <span className="gradient-title animate-shine">search-aware products</span>, flagship internal systems,
-              and modern web experiences backed by real delivery ownership.
-            </h1>
-            <p className="lead-text mt-6 max-w-3xl text-lg leading-8 sm:text-xl">
-              I work across full-stack development, SEO-focused builds, business systems, backend engineering,
-              infrastructure, e-commerce operations, and security-minded implementation. My portfolio is designed to show
-              real output, not filler projects.
-            </p>
 
-            <div className="mt-6 flex flex-wrap gap-3 lg:hidden">
-              <a
-                href="https://github.com/shreyanshjain1"
-                target="_blank"
-                rel="noreferrer"
-                className="button-secondary !rounded-full !px-4 !py-2 text-sm"
-              >
-                <Github className="h-4 w-4" />
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/shreyansh-jain-6b6813233/"
-                target="_blank"
-                rel="noreferrer"
-                className="button-secondary !rounded-full !px-4 !py-2 text-sm"
-              >
-                <Linkedin className="h-4 w-4" />
-                LinkedIn
-              </a>
-            </div>
+            <h1 className="mt-6 max-w-5xl text-4xl font-black leading-tight tracking-tight text-white sm:text-6xl xl:text-7xl">
+              I build <span className="gradient-title animate-shine">real business systems</span>, search-aware web
+              experiences, and flagship software with delivery depth behind the UI.
+            </h1>
+
+            <p className="lead-text mt-6 max-w-3xl text-lg leading-8 sm:text-xl">
+              My work spans full-stack development, business software, infrastructure, SEO-focused delivery, security-aware
+              implementation, and real-world system ownership. This portfolio is curated to highlight signal, not filler.
+            </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#projects" className="button-primary animate-shine">
@@ -533,6 +533,20 @@ export default function HomePage() {
                 shreyanshmanishjain@gmail.com
               </a>
             </div>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {valuePillars.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-white/8 bg-slate-950/45 p-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-cyan-300" />
+                    <div>
+                      <h3 className="font-semibold text-white">{item.title}</h3>
+                      <p className="mt-2 text-sm leading-7 text-slate-400">{item.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
           <motion.div
@@ -542,33 +556,53 @@ export default function HomePage() {
             className="panel-soft relative rounded-[30px] p-6 sm:p-8"
           >
             <div className="absolute -top-3 right-6 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
-              Portfolio focus
+              Why this portfolio works
             </div>
+
             <div className="mb-6 flex items-center gap-3">
               <div className="rounded-2xl bg-cyan-400/10 p-3 text-cyan-300">
                 <FolderKanban className="h-6 w-6" />
               </div>
               <div>
                 <p className="text-sm uppercase tracking-[0.2em] text-slate-400">Positioning</p>
-                <p className="text-lg font-bold text-white">Builder with product, systems, and SEO depth</p>
+                <p className="text-lg font-bold text-white">Builder with product, systems, and search depth</p>
               </div>
             </div>
+
             <div className="space-y-4 text-sm leading-7 text-slate-300">
               <p>
-                This site now positions you more clearly around full-stack engineering, search visibility work, business
-                systems, and delivery ownership across real operating environments.
+                I am strongest when the work sits at the intersection of engineering, operations, visibility, and real
+                business outcomes.
               </p>
               <p>
-                The strongest signal here is range with proof: from CrickInPhSEO for search-focused execution, to Vertex-POS
-                and VitaVault for stronger flagship product depth, to internal tools that reflect day-to-day business engineering.
+                The portfolio is intentionally weighted toward projects that prove architecture, workflow depth, reporting,
+                security thinking, and production-minded delivery instead of generic toy builds.
               </p>
             </div>
+
             <div className="mt-6 flex flex-wrap gap-3">
-              <span className="tech-tag">Full-Stack Development</span>
-              <span className="tech-tag">SEO Specialist</span>
+              <span className="tech-tag">Flagship Product Work</span>
               <span className="tech-tag">Business Systems</span>
+              <span className="tech-tag">Technical SEO</span>
               <span className="tech-tag">Infrastructure</span>
               <span className="tech-tag">Security-aware Builds</span>
+            </div>
+
+            <div className="mt-8 grid gap-4">
+              <div className="rounded-2xl border border-slate-800 bg-slate-950/45 p-4">
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Best fit roles</p>
+                <p className="mt-2 text-sm leading-7 text-slate-300">
+                  Full-Stack Developer, Backend Engineer, Systems / IT Lead, Internal Tools Engineer, SEO-Focused Web
+                  Developer, Technical Product Builder
+                </p>
+              </div>
+              <div className="rounded-2xl border border-slate-800 bg-slate-950/45 p-4">
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Core proof</p>
+                <p className="mt-2 text-sm leading-7 text-slate-300">
+                  Vertex-POS, VitaVault, TrailPulse, CrickInPhSEO, and internal business systems together show both range
+                  and depth.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -595,14 +629,17 @@ export default function HomePage() {
 
       <section id="projects" className="container-shell py-14 sm:py-20">
         <SectionHeader
-          eyebrow="Projects"
-          title="Flagship work, search-focused builds, and practical systems that reflect what you actually ship."
-          text="This project lineup has been rebalanced to better highlight your current strongest signals: SEO execution, flagship product work, operational systems, and real business-facing software."
+          eyebrow="Featured work"
+          title="High-signal projects that best represent how I build."
+          text="These are the projects I would want a hiring manager, founder, or technical reviewer to inspect first. They were chosen for depth, delivery quality, and real-world relevance."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {featuredProjects.map((project) => (
-            <MotionCard key={project.title} className="panel rounded-[28px] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/25">
+            <MotionCard
+              key={project.title}
+              className="panel rounded-[28px] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/25"
+            >
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-sm font-medium text-cyan-300">{project.type}</p>
@@ -617,7 +654,14 @@ export default function HomePage() {
                   <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
+
               <p className="mt-4 text-sm leading-7 text-slate-300">{project.description}</p>
+
+              <div className="mt-4 rounded-2xl border border-slate-800 bg-slate-950/45 p-4">
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Why it matters</p>
+                <p className="mt-2 text-sm leading-7 text-slate-300">{project.impact}</p>
+              </div>
+
               <div className="mt-5 flex flex-wrap gap-2">
                 {project.stack.map((item) => (
                   <span key={item} className="tech-tag">
@@ -628,13 +672,49 @@ export default function HomePage() {
             </MotionCard>
           ))}
         </div>
+
+        <div className="mt-12">
+          <h3 className="text-xl font-bold text-white">Supporting projects</h3>
+          <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-400">
+            Additional work that reinforces business tooling, workflow software, reporting, and operational implementation.
+          </p>
+
+          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+            {supportingProjects.map((project) => (
+              <MotionCard key={project.title} className="panel rounded-[24px] p-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-white">{project.title}</h4>
+                    <p className="mt-2 text-sm leading-7 text-slate-300">{project.description}</p>
+                  </div>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-xl border border-slate-700 p-2 text-slate-300 transition hover:border-cyan-300 hover:text-white"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </div>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.stack.map((item) => (
+                    <span key={item} className="tech-tag">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </MotionCard>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section id="experience" className="container-shell py-14 sm:py-20">
         <SectionHeader
           eyebrow="Professional experience"
-          title="Work spanning engineering, implementation, digital growth, operations, and secure system ownership."
-          text="Your portfolio should not read like pure frontend work. This section now leans harder into delivery, infrastructure, operational responsibility, and the business-side outcomes behind the systems you build."
+          title="Engineering, systems ownership, digital execution, and delivery accountability."
+          text="My experience is not limited to writing code. It includes building systems, improving operations, managing infrastructure, supporting growth initiatives, and keeping business-critical tech moving."
         />
 
         <div className="mt-10 space-y-6">
@@ -647,6 +727,7 @@ export default function HomePage() {
                 </div>
                 <div className="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">{job.period}</div>
               </div>
+
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-slate-300 sm:text-base">
                 {job.points.map((point) => (
                   <li key={point} className="flex gap-3">
@@ -662,9 +743,9 @@ export default function HomePage() {
 
       <section id="skills" className="container-shell py-14 sm:py-20">
         <SectionHeader
-          eyebrow="Skills and operating range"
-          title="A stronger mix of engineering depth, SEO execution, infrastructure, and business-system delivery."
-          text="This version sharpens your positioning so visitors can immediately understand that you are not boxed into one lane. You build, deploy, improve visibility, and keep systems running."
+          eyebrow="Skills"
+          title="A mix of engineering depth, technical SEO, infrastructure, and business-oriented software delivery."
+          text="The goal here is clarity: I am not limited to one lane. I can build, integrate, deploy, optimize, and support systems that matter in real operating environments."
         />
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -678,6 +759,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-xl font-bold text-white">{group.title}</h3>
                 </div>
+
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span key={item} className="tech-tag">
@@ -693,9 +775,9 @@ export default function HomePage() {
 
       <section id="recognition" className="container-shell py-14 sm:py-20">
         <SectionHeader
-          eyebrow="Recognition, credentials, and publication"
-          title="Verified profile signals from education, public credentials, and published work."
-          text="This section stays useful because it adds proof points without clutter. It complements your flagship repos instead of trying to carry the whole portfolio by itself."
+          eyebrow="Recognition"
+          title="Additional proof through credentials, academic recognition, and published work."
+          text="These signals support the portfolio without distracting from the strongest part of the story, which is still the quality and depth of the projects."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -706,9 +788,10 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">Certificates & Test Scores</h3>
-                <p className="text-sm text-slate-400">LinkedIn-visible entries</p>
+                <p className="text-sm text-slate-400">Publicly visible proof points</p>
               </div>
             </div>
+
             <div className="space-y-4">
               {linkedInCredentials.map((credential) => (
                 <div key={credential.title} className="rounded-2xl border border-slate-800 bg-slate-950/45 p-4">
@@ -735,15 +818,30 @@ export default function HomePage() {
                 <p className="text-sm text-slate-400">ACM-indexed paper</p>
               </div>
             </div>
+
             <h4 className="text-lg font-semibold leading-8 text-white">{publication.title}</h4>
+
             <div className="mt-4 grid gap-3 text-sm leading-7 text-slate-300">
-              <p><span className="text-slate-400">Publisher:</span> {publication.publisher}</p>
-              <p><span className="text-slate-400">Venue:</span> {publication.venue}</p>
-              <p><span className="text-slate-400">Published:</span> {publication.date}</p>
-              <p><span className="text-slate-400">Pages:</span> {publication.pages}</p>
-              <p><span className="text-slate-400">DOI:</span> {publication.doi}</p>
-              <p><span className="text-slate-400">Authors:</span> {publication.authors.join(", ")}</p>
+              <p>
+                <span className="text-slate-400">Publisher:</span> {publication.publisher}
+              </p>
+              <p>
+                <span className="text-slate-400">Venue:</span> {publication.venue}
+              </p>
+              <p>
+                <span className="text-slate-400">Published:</span> {publication.date}
+              </p>
+              <p>
+                <span className="text-slate-400">Pages:</span> {publication.pages}
+              </p>
+              <p>
+                <span className="text-slate-400">DOI:</span> {publication.doi}
+              </p>
+              <p>
+                <span className="text-slate-400">Authors:</span> {publication.authors.join(", ")}
+              </p>
             </div>
+
             <a href={publication.href} target="_blank" rel="noreferrer" className="button-secondary mt-6 inline-flex">
               <ScrollText className="h-4 w-4" />
               View publication
@@ -779,21 +877,15 @@ export default function HomePage() {
         <MotionCard className="panel rounded-[32px] p-8 sm:p-10">
           <SectionHeader
             eyebrow="Contact"
-            title="Open to strong engineering, systems, backend, SEO, and security-aware opportunities."
-            text="Whether the role is full-stack, internal systems, backend engineering, SEO-focused web delivery, business technology, or security-minded product development, this portfolio is now positioned to show a broader and stronger range."
+            title="Open to full-stack, backend, systems, SEO-focused, and security-aware opportunities."
+            text="I am especially suited for roles where engineering, operations, product thinking, and implementation ownership overlap."
           />
 
           <div className="mt-8 flex flex-wrap gap-4">
             {contactLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="button-secondary"
-                >
+                <a key={link.label} href={link.href} target="_blank" rel="noreferrer" className="button-secondary">
                   <Icon className="h-4 w-4" />
                   {link.label}
                 </a>
